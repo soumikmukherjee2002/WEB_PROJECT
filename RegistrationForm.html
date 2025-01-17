@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff8c00;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 0;
+        }
+        .container {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container input[type="submit"] {
+            background-color: #2087e8;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%;
+
+            transition: all 0.4s linear 0s;
+        }
+        .container input[type="submit"]:hover {
+            background-color: #f69606;
+            width: 100%;
+
+            transform: translateY(8px);
+            
+
+
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+
+        }
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">Notice</a>
+    </div>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

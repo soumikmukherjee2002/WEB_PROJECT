@@ -1,0 +1,329 @@
+<html>
+ <head>
+  <title>
+   Odor - Vaping Products
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header .nav-links a:hover {
+            color: #ff6600;
+        }
+        .header .nav-links .cart {
+            position: relative;
+        }
+        .header .nav-links .cart .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 50%;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+        .hero {
+            background: url('../IMG/SPPP.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .categories {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .categories h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .categories .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .categories .category-list .category {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .categories .category-list .category img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .categories .category-list .category p {
+            margin: 0;
+        }
+        .bundles {
+            background: url('../IMG/GALXX.jpg') no-repeat center center/cover;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .bundles h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .bundles .bundle-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .bundles .bundle-list .bundle {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .bundles .bundle-list .bundle img {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .bundles .bundle-list .bundle p {
+            margin: 0;
+        }
+        .latest-products {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .latest-products h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .latest-products .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .latest-products .product-list .product {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .latest-products .product-list .product img {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .latest-products .product-list .product p {
+            margin: 0;
+        }
+        .latest-products .product-list .product .rating {
+            color: #ff6600;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <img alt="Logo" height="40" src="../IMG/GALXX.jpg" width="40"/>
+    <h1>
+     SMALL
+    </h1>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search..." type="text"/>
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     Home
+    </a>
+    <a href="#">
+     Shop
+    </a>
+    <a href="#">
+     About
+    </a>
+    <a href="#">
+     Contact
+    </a>
+    <a class="cart" href="#">
+     <i class="fas fa-shopping-cart">
+     </i>
+     <span class="cart-count">
+      3
+     </span>
+    </a>
+   </div>
+  </div>
+  <div class="hero">
+   <h1>
+    Find Everything For
+    <span style="color: #ff6600;">
+     Vaping
+    </span>
+   </h1>
+   <p>
+    Discover the best vaping products and accessories
+   </p>
+   <button class="btn">
+    Shop Now
+   </button>
+  </div>
+  <div class="categories">
+   <h2>
+    Our Top Categories
+   </h2>
+   <div class="category-list">
+    <div class="category">
+     <img alt="E-Liquids" height="50" src="https://storage.googleapis.com/a1aa/image/cQJpEWhAirqtAx04YUtOorr6ZRn11UOhGpWVkCcoL3S1vE9E.jpg" width="50"/>
+     <p>
+      E-Liquids
+     </p>
+    </div>
+    <div class="category">
+     <img alt="Pod Kits" height="50" src="https://storage.googleapis.com/a1aa/image/Iwf8X0U4AjwMaSzZrYMekIHJIeDrX8qjWfNTfCuDMhpn4XieE.jpg" width="50"/>
+     <p>
+      Pod Kits
+     </p>
+    </div>
+    <div class="category">
+     <img alt="Vape Tanks" height="50" src="https://storage.googleapis.com/a1aa/image/5kQZyJzmqdKfbqBsBnaRSB5wS3ZVMdMFfyrRoEHulrAMflonA.jpg" width="50"/>
+     <p>
+      Vape Tanks
+     </p>
+    </div>
+    <div class="category">
+     <img alt="Box Mods" height="50" src="https://storage.googleapis.com/a1aa/image/yAFzdUcUXSb6ClxzWgr7FiEVHfbVx8dKrDwCeY7qfqzFeLRPB.jpg" width="50"/>
+     <p>
+      Box Mods
+     </p>
+    </div>
+    <div class="category">
+     <img alt="Accessories" height="50" src="https://storage.googleapis.com/a1aa/image/suLClfShLZRDWy5VBMHwd3VpPJSH2BKOGnlEuzXrwBYkfS0TA.jpg" width="50"/>
+     <p>
+      Accessories
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="bundles">
+   <h2>
+    The Best E-Liquid Bundles
+   </h2>
+   <div class="bundle-list">
+    <div class="bundle">
+     <img alt="E-Liquid Bundle 1" height="150" src="https://storage.googleapis.com/a1aa/image/Y3fyb06YwNQ2aizo18ug8aLPZ0laBt3kLqaV2D8yJLClfS0TA.jpg" width="200"/>
+     <p>
+      E-Liquid Bundle 1
+     </p>
+    </div>
+    <div class="bundle">
+     <img alt="E-Liquid Bundle 2" height="150" src="https://storage.googleapis.com/a1aa/image/RYqPZheFoG3APihyqf864whQYLlGemYH2R2RvIcwkTtNeLRPB.jpg" width="200"/>
+     <p>
+      E-Liquid Bundle 2
+     </p>
+    </div>
+    <div class="bundle">
+     <img alt="E-Liquid Bundle 3" height="150" src="https://storage.googleapis.com/a1aa/image/4t6TVeTUwsUEEiOVphT5T4hSmnAe99q6biOm1fYSxAbaeLRPB.jpg" width="200"/>
+     <p>
+      E-Liquid Bundle 3
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="latest-products">
+   <h2>
+    Latest Arrival Products
+   </h2>
+   <div class="product-list">
+    <div class="product">
+     <img alt="Product 1" height="150" src="https://storage.googleapis.com/a1aa/image/6xlZsmYS1Y6DNhBMrPYgWPeTxqIaGIezSiEUdaRA7ifdeLRPB.jpg" width="200"/>
+     <p>
+      Product 1
+     </p>
+     <p class="rating">
+      ★★★★★
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Product 2" height="150" src="https://storage.googleapis.com/a1aa/image/eG01UpfS3MtM5093CwMtQSQFB7qSBGC6rPEuxPALUcvDflonA.jpg" width="200"/>
+     <p>
+      Product 2
+     </p>
+     <p class="rating">
+      ★★★★★
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Product 3" height="150" src="https://storage.googleapis.com/a1aa/image/RHoAj6T3UTb0LtQgtj1DiyltTbNYENc3DyU7ejMEpiYofS0TA.jpg" width="200"/>
+     <p>
+      Product 3
+     </p>
+     <p class="rating">
+      ★★★★★
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Product 4" height="150" src="https://storage.googleapis.com/a1aa/image/sZkZ5l8AKvLbO5w9D69s0qiPet4j0jcoZXOlhyflqgSRflonA.jpg" width="200"/>
+     <p>
+      Product 4
+     </p>
+     <p class="rating">
+      ★★★★★
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myform</title>
+    <style>
+
+        *{
+            background-color: black;
+            
+        }
+        input{
+            background-color: aliceblue;
+        }
+
+        .op{
+            display: flex;
+            justify-content: center;
+        }
+
+       form{
+        height: 300px;
+        width: 400px;
+       
+        padding: 200px 200px;
+
+       }
+        #a{
+            background-color:orange;
+        }
+        #b{
+            background-color: rgb(0, 0, 0);
+
+        }
+        thead>tr>th{
+            color: aliceblue;
+        }
+        #c,#d,#e{
+            color: aliceblue;
+        }
+        
+        #st1,#st2{
+            color: red;
+        }
+        #emailhldr{
+            width: 100%;
+            border-radius: 7px;
+            border: 0px;
+        }
+        #texthldr{
+            width: 100%;
+            height: 50px;
+            border-radius: 7px;
+            border: 0px;
+        }
+        #fnamehldr, #lnamehldr{
+            border-radius: 7px;
+            border: 0px;
+        }
+        #suff1, #suff2{
+            color: aliceblue;
+            font-size: xx-small;
+        }
+        button{
+            background-color: red;
+            color: aliceblue;
+            border-radius: 5px;
+            border: 0px;
+            width: 100px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: green;
+            box-shadow: inset;
+        }
+    </style>
+</head>
+<body>
+    <form class="op">
+        <fieldset id="a">
+            <fieldset id="b">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="2" align="center">Contact Us</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><label for="" id="c">Full Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="fnamehldr" align="center"><br><span id="suff1">First</span></td>
+                        <td><input type="text" name="" id="lnamehldr" align="center"><br><span id="suff2">Last</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="" id="d">Email<span id="st1">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email" id="emailhldr"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="" id="e">Leave some word for us<span id="st2">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="texthldr"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button>Submit</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

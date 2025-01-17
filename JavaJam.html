@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>JavaJam Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5ab;
+            display: flex;
+            min-height: 100vh;
+        }
+        #wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #d2b48c;
+            padding: 10px;
+            
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            padding-left: 170px;
+        }
+        nav {
+            width: 150px;
+            background-color: #3b2f2f;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav img {
+            width: 140px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px ;
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+
+        }
+        nav a:hover {
+            background-color: #d2b48c;
+            text-decoration: underline;
+        }
+        #content {
+            margin-left: 170px;
+            padding: 20px;
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #d2b48c;
+            font-size: 0.8em;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .input-container {
+            position: relative;
+            width: 300px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JavaJam Coffee House</h1>
+        </header>
+        <nav>
+            <img alt="logo" src="../IMG/javajamlogo.jpg" />
+            <a href="#">Menu</a>
+            <a href="#">Music</a>
+            <a href="#">Jobs</a>
+        </nav>
+        <div id="content">
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk (*).</p>
+            <form>
+                <label for="name">* Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">* E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="experience">* Experience:</label>
+                <div class="input-container">
+                    <textarea id="experience" name="experience" rows="4" required></textarea>
+                    <input type="submit" value="Apply Now">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2024 JavaJam Coffee House<br>
+            <a href="onlinekazama19@gmail.com">onlinekazama19@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>

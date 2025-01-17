@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .child {
+            height: 200px;
+            width: 200px;
+            
+            border: 2px solid black;
+            color: white;
+            position: absolute;
+            top: 100px;
+            left: 40%;
+
+            transition: all 3s linear 0s;
+        }
+        .a {
+            background-color: rgb(255, 0, 0);
+        }
+        .b {
+            background-color: rgb(255, 180, 19);
+            z-index: 10;
+        }
+        .c {
+            background-color: rgb(3, 40, 249);
+            z-index: 20;
+        }
+        .d {
+            background-color: rgb(99, 11, 188);
+        }
+        .box {
+            position: relative;
+        }
+        .box:hover .a {
+            transform: translateX(400px ) rotate(12360deg);
+        }
+        .box:hover .b {
+            transform: translateX(-400px) rotate(12360deg);
+        }
+        .box:hover .c {
+            transform: translateY(400px) rotate(12360deg);
+        }
+        .box:hover .d {
+            transform: translateY(-400px) rotate(12360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="child a">1</div>
+        <div class="child b">2</div>
+        <div class="child c">3</div>
+        <div class="child d">4</div>
+    </div>
+
+</body>
+</html>
